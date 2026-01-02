@@ -5,9 +5,13 @@
 [Bb]uild/
 [Bb]uilds/
 [Ll]ogs/
+[Bb]in/
 MemoryCaptures/
+UserSettings/
 
 # VS + Rider
+**/.vsconfig
+.vscode/
 .vs/
 *.csproj
 *.suo
@@ -35,4 +39,5 @@ Thumbs.db
 # Test Results
 *.testresult
 
-/bin
+#LLM stuff
+Assets/StreamingAssets/*undreamai*/
