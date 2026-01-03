@@ -965,7 +965,8 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   contextSize: 8192
   batchSize: 512
-  model: Meta-Llama-3.1-8B-Instruct-Q3_K_L.gguf
+  model: 
+  modelKey: 
   chatTemplate: llama3 chat
   lora: 
   loraWeights: 
