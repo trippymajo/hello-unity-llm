@@ -18,3 +18,16 @@ How to use own LLMs:
   "goals": []
 }
 ```
+
+How to change LLMs prompts:  
+1. Go to projectname_Data/StreamingAssets
+2. Edit models-prompts.json
+
+```json
+{
+  "stupid": "Answer only with YES",
+  "genius": "Answer only with YES"
+}
+```
+3. Go to classroom Scene and click update pormpts
+4. Enjoy
