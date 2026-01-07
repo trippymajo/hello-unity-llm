@@ -60,6 +60,9 @@ namespace LLMUnity
         /// <summary> LLM model to use (.gguf format) </summary>
         [Tooltip("LLM model to use (.gguf format)")]
         [ModelAdvanced] public string model = "";
+        /// <summary>Optional key used by the ModelResolver to pick the model from configuration.</summary>
+        [Tooltip("Optional key used by the ModelResolver to pick the model from configuration.")]
+        [ModelAdvanced] public string modelKey = "";
         /// <summary> Chat template for the model </summary>
         [Tooltip("Chat template for the model")]
         [ModelAdvanced] public string chatTemplate = ChatTemplate.DefaultTemplate;
@@ -127,6 +130,7 @@ namespace LLMUnity
         public async void Awake()
         {
             if (!enabled) return;
+            ModelResolver.ApplyModel(this);
 #if !UNITY_EDITOR
             modelSetupFailed = !await LLMManager.Setup();
 #endif

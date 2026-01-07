@@ -965,7 +965,8 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   contextSize: 1024
   batchSize: 512
-  model: qwen2.5-0.5b-instruct-q2_k.gguf
+  model: 
+  modelKey: 
   chatTemplate: chatml
   lora: 
   loraWeights: 

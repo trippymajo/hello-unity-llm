@@ -41,3 +41,5 @@ Thumbs.db
 
 #LLM stuff
 Assets/StreamingAssets/*undreamai*/
+*.gguf
+Assets/StreamingAssets/*.meta
